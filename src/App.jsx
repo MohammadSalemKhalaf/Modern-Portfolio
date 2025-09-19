@@ -4,7 +4,7 @@ import Footer from "./components/footer/Footer";
 import { Hero } from "./components/hero/Hero";
 import Navbar from "./components/navbar/Navbar";
 import { Projects } from "./components/projects/Projects";
-import { Services } from "./components/services/Services";
+import Services from "./components/services/Services";
 
 export default function App() {
   return (
