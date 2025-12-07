@@ -1,5 +1,6 @@
 import onlineCarShopImage from "./carShop.png";
 import hopeConnectImage from "./hopeconnect.png";
+import menu from "./menu.png";
 import mvcProjectImage from "./mvc.png";
 import Portfolio from "./portfolio.png";
 
@@ -33,6 +34,13 @@ export const Projects = () => {
       image: Portfolio,
       github: "https://github.com/MohammadSalemKhalaf/Protfolio-1.git",
     },
+    {
+      id: 5,
+      name: "Restaurant Menu",
+      technologies: "React / Tailwind",
+      image: menu,
+      github: "https://almond-restaurant-menu.onrender.com/ ",
+    },
   ];
 
   return (
@@ -61,7 +69,10 @@ export const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                GitHub
+                {project.name == "Online Car Shop" ||
+                project.name == "Restaurant Menu"
+                  ? "Show Project"
+                  : "Github"}
               </a>
             </div>
           ))}
